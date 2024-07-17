@@ -1,0 +1,26 @@
+input{
+    display: block;
+}
+input[type="text"]{
+    border: 2px solid aqua;
+}
+input{
+    padding: 15px;
+    border-radius: 10px;
+}
+input[type="text"]:focus{
+border: none;
+outline: none;
+border-bottom: 2px solid aqua;
+}
+form{
+    background: linear-gradient(rgba(45,55,245,0.2));
+    padding: 40px;
+    position: absolute;
+    bottom: 50px;
+    border-radius: 15px;
+
+}
+input[title="Enter email"]{
+    color: yellow;
+}

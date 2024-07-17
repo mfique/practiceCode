@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Secular One", sans-serif;
+  background-color: #040618;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header {
+  border-radius: 300px;
+  position: fixed;
+  width: 100%; /* Use 100% width for responsiveness */
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 1px 5px rgba(132, 70, 70, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.site-header .logo img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px; /* Add space between logo and links */
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-nav ul li {
+  margin-right: 70px; /* Adjust the margin between links */
+}
+
+.main-nav a {
+  text-decoration: none;
+
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+.main-nav a.active {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.main-nav a:hover {
+  color: #2ecc71;
+}
+
+.main-nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #2ecc71;
+  transition: width 0.3s ease-in-out;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+.main-content {
+  margin-top: 50px;
+}
+
+body.scrolled .site-header {
+  background-color: #2980b9;
+}
+button {
+  padding: 10px 40px;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: inherit;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.begining {
+  color: antiquewhite;
+  text-align: center;
+  font-size: 45px;
+  padding: 300px;
+}
+footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: silver;
+  padding: 100px 0 30px;
+  line-height: 20px;
+  font-size: 15px;
+  font-family:"Secular One", sans-serif; 
+}
+.row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap:wrap ;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.logo{
+  left: 120px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+  animation: colorChange 10s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #3498db;
+  }
+  10% {
+    color: #2ecc71;
+  }
+  20% {
+    color: #e74c3c;
+  }
+  30% {
+    color: #f39c12;
+  }
+  40% {
+    color: #9b59b6;
+  }
+  50% {
+    color: #3498db;
+  }
+  60% {
+    color: #2ecc71;
+  }
+  70% {
+    color: #e74c3c;
+  }
+  80% {
+    color: #f39c12;
+  }
+  90% {
+    color: #9b59b6;
+  }
+  100% {
+    color: #3498db;
+  }
+}
+.background{
+  width: 100%;
+  z-index: -1;
+  animation: colorChange 10s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+  }
+  25% {
+    background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #b5beff 100%);
+
+    
+  }
+  50% {
+    background-color: #A9C9FF;
+background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+
+  }
+  75% {
+    background-color: #74EBD5;
+background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+
+  }
+  100% {
+    background-color: #3EECAC;
+background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
+
+  }
+}
+

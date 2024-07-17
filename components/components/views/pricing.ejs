@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;900&display=swap");
+ 
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 100vh;
+  background-color: #040618;
+}
+.city {
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: beige;
+  transition: transform 0.3s ease-in-out;
+}
+.city:hover{
+    transform: scale(1.1);
+}
+button {
+  background-color: #348AC7;
+  border-radius: 15px;
+  border: none;
+  width: 200px;
+  height: 40px;
+  font-weight:bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #4389A2;
+    transform: scale(1.1);
+}
+h1 {
+  font-family: "Lato", sans-serif;
+}
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color:darkslategray;
+}
+span{
+    font-size: 40px;
+}
+
+    </style>
+  </head>
+  <body>
+<h1></h1>
+    <div class="city">
+      <h1>Free</h1>
+      <p>For individual and bussiness getting started with a low number of employees.</p>
+      <button>Get started</button>
+      <p>
+        <span>0$</span><br />
+        create up to 5 accounts for your Employees
+      </p>
+    </div>
+    <div class="city">
+      <h1>Essentials</h1>
+      <p>
+        For proffessional who use publishing, analytics and engagement tools.
+      </p>
+      <button>Buy Now</button>
+      <p>
+        <span>$50</span>/ monthly for 1-50 accounts
+      </p>
+    </div>
+    <div class="city">
+      <h1>Team</h1>
+      <p>For Checking on teams who want unlimited users, collaboration and reporting.</p>
+      <button>Buy Now</button><br />
+      <p>
+        <span>$100</span>/ monthly for 50-100 channel <br />
+        Add additional 20 accounts for $12/month 
+        Billed Monthly
+      </p>
+    </div>
+    <div class="city">
+      <h1>Agency</h1>
+      <p>For agencies, companies and organization 100-200 +(and more) Accounts.</p>
+      <button>Buy Now</button>
+      <p>
+        <span>$250</span>/ monthly for 200+ Accounts<br />
+
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function classBMagic() {
+            let firstDiv = document.getElementById("firstDiv");
+            let existingDiv = firstDiv.children[1];
+
+            let newDistricts = ["Rusizi", "Rutsiro", "Ngororero","rubavu","nyabihu"];
+
+            for (let i = 0; i < newDistricts.length; i++){
+                 let newParagraph = document.createElement("p");
+                if ( i==2 ){
+                    newParagraph.setAttribute("class","my-styles")
+                } 
+                let newText = document.createTextNode(newDistricts[i]);
+                newParagraph.appendChild(newText);
+                existingDiv.appendChild(newParagraph);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="firstDiv">
+        <h1>List of districts in the western provinces of Rwanda</h1>
+        <div>
+            <p>Nyabihu</p>
+            <p>Rubavu</p>
+            <p>Karongi</p>
+        </div>
+        <div>
+            <button onclick="classBMagic()">Add 3 More Districts</button>
+        </div>
+    </div>
+</body>
+</html>

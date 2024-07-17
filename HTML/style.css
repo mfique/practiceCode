@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65)), url(2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: rgba(9, 0, 77, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul.show {
+    display: flex;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: aqua;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: #f5168d;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+}
+
+.menu-toggle span {
+    background: white;
+    height: 3px;
+    margin: 4px 0;
+    width: 100%;
+}
+
+.content {
+    text-align: center;
+    color: #fff;
+    margin-top: 20%;
+}
+
+.content h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.content form input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.content form .btn {
+    width: 100%;
+    max-width: 200px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 480px) {
+    .container {
+        padding: 20px 5%;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        position: static;
+        flex-direction: row;
+        background: none;
+        padding: 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .content {
+        margin-top: 30%;
+    }
+
+    .content h1 {
+        font-size: 42px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .content p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .content form input {
+        max-width: 250px;
+    }
+}
+
+@media only screen and (min-width: 770px) {
+    .container {
+        padding: 20px 8%;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        position: static;
+        flex-direction: row;
+        background: none;
+        padding: 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .content {
+        margin-top: 100px;
+    }
+
+    .content h1 {
+        font-size: 60px;
+        line-height: 1.1;
+        margin-bottom: 30px;
+    }
+
+    .content p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    .content form {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .content form input {
+        margin-right: 10px;
+    }
+
+    .content form .btn {
+        width: auto;
+        padding: 12px 30px;
+        font-size: 18px;
+    }
+}

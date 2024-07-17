@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL FINANCE APPLICATION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Budget</a></li>
+                <li><a href="#">ContactUs</a></li>
+            </ul>
+            <button class="btn">Savings</button>
+        </nav>
+        <div class="content">
+            <h1>Personal finance <br> and Investment Insight:</h1>
+            <p>Welcome to Our Insights.<br>
+                Discover valuable tips and information about personal finance management, investment opportunities, and financial planning.<br>
+                
+                Personal Finance Management:<br>
+                Learn how to budget effectively, save money, manage debt, and achieve financial goals.<br>
+                
+                Investment Opportunities:<br>
+                Explore different investment options such as stocks, bonds, real estate, and mutual funds.<br>
+                
+                Financial Planning:<br>
+                Get insights into retirement planning, tax strategies, insurance, and building wealth for the future.</p>
+            
+            <form class="form">
+                <input type="text" placeholder="Business Description" >
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navUl = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navUl.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

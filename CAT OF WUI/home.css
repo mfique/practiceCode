@@ -1,0 +1,225 @@
+/* Basic Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('coffee.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    border-radius:10px;
+
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 20px;
+    background: #f7f7f7;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-images {
+    display: flex;
+    flex: 1;
+}
+
+.about-images img {
+    width: 50%;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 50px 20px;
+}
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 20px);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    background: #f7f7f7;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px 0;
+    background: aqua;
+    color: #fff;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background: #333;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-images {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .about-images img {
+        width: 80%;
+        margin: 0 10px;
+    }
+
+    .menu-grid {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+}

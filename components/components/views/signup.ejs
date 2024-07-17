@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloom Lotion | Registration</title>
+
+  </head>
+  <style>
+    p{
+      text-align: center;
+    }
+    @import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Secular One", sans-serif;
+  background-color: #1d1e29;
+}
+
+.container {
+  opacity: 1;
+}
+.form {
+  background-color: transparent;
+  padding: 50px;
+  backdrop-filter: blur(10px);
+  border: 8px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+h3 {
+  color: silver;
+  font-size: 30px;
+  font-family: "Secular One", sans-serif;
+}
+
+label {
+  color: azure;
+  display: block;
+  margin-top: 10px;
+}
+input {
+  padding: 9px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+}
+input:hover {
+  transform: scale(1.1);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Lemon", serif;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+.logo {
+  width: 90px;
+  height: 90px;
+}
+.lap {
+  width: 100px;
+  height: 100px;
+}
+.hop {
+  font-family: "Lemon", serif;
+}
+.input-container {
+  position: relative;
+}
+
+i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  padding-left: 30; /* Adjust padding to make room for the icon */
+  border: 2px solid gray;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+input:hover {
+  transform: scale(1.1);
+}
+
+span {
+  left: 120px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+  animation: colorChange 10s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #3498db;
+  }
+  10% {
+    color: #2ecc71;
+  }
+  20% {
+    color: #e74c3c;
+  }
+  30% {
+    color: #f39c12;
+  }
+  40% {
+    color: #9b59b6;
+  }
+  50% {
+    color: #3498db;
+  }
+  60% {
+    color: #2ecc71;
+  }
+  70% {
+    color: #e74c3c;
+  }
+  80% {
+    color: #f39c12;
+  }
+  90% {
+    color: #9b59b6;
+  }
+  100% {
+    color: #3498db;
+  }
+}
+
+  </style>
+  <body>
+    <div class="container">
+      <div class="logo"></div>
+      <form class="form" action="/signup.html" method="post">
+        <div class="container">
+        <h3> Create an Account In<span> Laborer </span></h3>
+        
+        <label for="email">E-mail
+        <ion-icon name="contact"></ion-icon>
+        <input type="email" id="email" name="email" required /><br />
+      </label>
+        <label for="password"> Password
+        <input type="password" id="password" name="password" required /><br />
+      </label>
+      <label for="password"> Username 
+        <input type="text" id="text" name="text" required /><br />
+      </label> 
+      <label>
+        Phone Number
+        <input type="Number" id="Number" name="Number">
+      </label>
+      <p>
+        Arleady have an account ?<a class="hop" href="login.html">Login</a
+        ><br /><br />
+      </p>
+      <a href="next.html"><button type="submit">next</a></button>
+      </form>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </body>
+</html>
